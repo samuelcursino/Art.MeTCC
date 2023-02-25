@@ -1,6 +1,6 @@
 const express = require('express');
-const rotasUser_vendedor = require('./route/routeUser_Vendedor');
-const rotasProduto = require('./route/routeProduto');
+const rotasCategoriaServico = require('./route/routeCategoriaServico');
+const rotasUsuario = require('./route/routeUsuario');
 const rotasCategoria_Produto = require('./route/routeCategoria_Produto');
 const rotasUser_Cliente = require('./model/modelUser_Cliente');
 
@@ -8,10 +8,10 @@ const app = express();
 
 app.use(express.json());
 
-console.log('teste rodando')
+console.log('teste fluindo')
 
-app.use('/', rotasUser_vendedor);
-app.use('/', rotasProduto);
+app.use('/', rotasCategoriaServico);
+app.use('/', rotasUsuario);
 app.use('/', rotasCategoria_Produto);
 app.use('/',rotasUser_Cliente);
 
