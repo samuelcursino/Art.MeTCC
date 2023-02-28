@@ -30,6 +30,6 @@ const modelUsuario = connection.define(
     }
 );
 
-//modelProduto.sync({force:true});
+//modelUsuario.sync({force:true});
 
 module.exports = modelUsuario;

@@ -60,7 +60,7 @@ router.get('/listarUsuario', (req, res)=>{
 //------------------------------ ROTA DE LISTAGEM DE USUARIO POR NOME ---------------------------
 router.get('/listarUsuarioPK/:nome', (req, res)=>{
 
-    //DECLARAR E RECEBER O CPF
+    //DECLARAR E RECEBER O NOME
     let {nome} = req.params;
 
     //AÇÃO DE SELEÇÃO DE DADOS DO SEQUELIZE

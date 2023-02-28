@@ -5,7 +5,7 @@ const connection = require('../database/database');
 const modelServico = connection.define(
     'tbl_servico',
     {
-        id_Produto:{
+        id_servico:{
             type: Sequelize.INTEGER(20),
             primaryKey: true,
             autoIncrement:true
@@ -18,6 +18,6 @@ const modelServico = connection.define(
     }
 );
 
-//modelProduto.sync({force:true});
+//modelServico.sync({force:true});
 
 module.exports = modelServico;

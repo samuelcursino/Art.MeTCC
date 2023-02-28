@@ -6,7 +6,7 @@ const modelCategoriaServico = connection.define(
     'cat_servico',
     {
         id_Categoria:{
-            type: Sequelize.INT(),
+            type: Sequelize.INTEGER(),
             primaryKey: true,
             autoIncrement:true
         },
@@ -18,6 +18,6 @@ const modelCategoriaServico = connection.define(
     }
 );
 
-//modelCategoria_Produto.sync({force:true});
+//modelCategoriaServico.sync({force:true});
 
 module.exports = modelCategoriaServico;

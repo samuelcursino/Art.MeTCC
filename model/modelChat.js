@@ -18,6 +18,6 @@ const modelChat = connection.define(
     }
 );
 
-//modelProduto.sync({force:true});
+//modelChat.sync({force:true});
 
 module.exports = modelChat;
