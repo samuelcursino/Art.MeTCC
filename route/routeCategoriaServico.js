@@ -16,7 +16,7 @@ router.post('/cadastrarCategoriaServico', (req, res)=>{
         ()=>{
             return res.status(201).json({
                 erroStatus:false,
-                mensagemStatus:"CATEGORIA DO SERVICO Icategoria COM SUCESSO."
+                mensagemStatus:"CATEGORIA DO SERVICO CADASTRADA COM SUCESSO."
             })
         }
     ).catch(
@@ -58,13 +58,13 @@ router.get('/listarCategoriaServico', (req, res)=>{
 // -----------------------------------------------------------------------------------------------------
 
 //------------------------------ ROTA DE LISTAGEM DE SERVICO POR ID ---------------------------
-router.get('/listarCategoriaServicoPK/:id_Servico', (req, res)=>{
+router.get('/listarCategoriaServicoPK/:id_categoria', (req, res)=>{
 
     //DECLARAR E RECEBER O ID
-    let {id_Categoria} = req.params;
+    let {id_categoria} = req.params;
 
     //AÇÃO DE SELEÇÃO DE DADOS DO SEQUELIZE
-    modelCategoriaServico.findByPk(id_Categoria)
+    modelCategoriaServico.findByPk(id_categoria)
     .then(
         (response)=>{
             return res.status(200).json({
@@ -141,29 +141,29 @@ router.get('/listarCategoriaServicoDESC/:desc_categoria', (req, res)=>{
 // -----------------------------------------------------------------------------------------------------
 
 // ----------------------------------- ROTA DE EXCLUSÃO DE CATEGORIA DO SERVICO-----------------------------------
-// router.delete('/excluirServico/:id_servico', (req, res)=>{
-//     console.log(req.params);
-//     let {id_servico} = req.params
+router.delete('/excluirCategoriaServico/:id_categoria', (req, res)=>{
+    console.log(req.params);
+    let {id_categoria} = req.params
 
-//     modelCategoriaServico.destroy(
-//         {where:{id_servico}}
-//     ).then(
-//         ()=>{
-//             return res.status(200).json({
-//                 erroStatus:false,
-//                 mensagemStatus:"SERVICO EXCLUIDO COM SUCESSO."
-//             })
-//         }
-//     ).catch(
-//         (error)=>{
-//             return res.status(400).json({
-//                 erroStatus:true,
-//                 mensagemStatus:"ERRO AO EXCLUIR O SERVICO.",
-//                 errorObject:error
-//             });
-//         }
-//     );
-// });
+    modelCategoriaServico.destroy(
+        {where:{id_categoria}}
+    ).then(
+        ()=>{
+            return res.status(200).json({
+                erroStatus:false,
+                mensagemStatus:"CATEGORIA DO SERVICO EXCLUIDA COM SUCESSO."
+            })
+        }
+    ).catch(
+        (error)=>{
+            return res.status(400).json({
+                erroStatus:true,
+                mensagemStatus:"ERRO AO EXCLUIR A CATEGORIA DO SERVICO.",
+                errorObject:error
+            });
+        }
+    );
+});
 // -----------------------------------------------------------------------------------------------------
 
 module.exports = router;
