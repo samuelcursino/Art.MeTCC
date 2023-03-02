@@ -6,12 +6,12 @@ const modelChat = connection.define(
     'tbl_chat',
     {
         Mensagem:{
-            type: Sequelize.INTEGER(),
+            type: Sequelize.STRING(),
             primaryKey: true,
             autoIncrement:false
         },
         imagem:{
-            type: Sequelize.BLOB,
+            type: Sequelize.STRING(),
             allowNull: false
         }
         
