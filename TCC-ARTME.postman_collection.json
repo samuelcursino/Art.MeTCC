@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "addaba97-9f16-46d3-9c29-2211c454e3b4",
+		"name": "TCC-ARTME",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22798579"
+	},
+	"item": [
+		{
+			"name": "CATEGORIA_SERVICO",
+			"item": [
+				{
+					"name": "CadastrarCategoriaSERVICO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"desc_categoria\":\"Grafiteiro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cadastrarCategoriaServico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastrarCategoriaServico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarCategoriaSERVICO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/listarCategoriaServico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarCategoriaServico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarCategoriaServicoPK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/listarCategoriaServicoPK/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarCategoriaServicoPK",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarCategoriaProdutoNOME",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/listarCategoriaServicoDESC/fotografo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarCategoriaServicoDESC",
+								"fotografo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluirCategoriaSERVICO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/excluirCategoriaServico/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"excluirCategoriaServico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CHAT",
+			"item": [
+				{
+					"name": "CadastrarMensagem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Mensagem\":\"hello people\",\r\n    \"imagem\":\"imagem\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cadastrarMensagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastrarMensagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarMensagem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/listarMensagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarMensagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExcluirMensagem",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/excluirMensagem/HelloPeople",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"excluirMensagem",
+								"HelloPeople"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SERVICO",
+			"item": [
+				{
+					"name": "CadastrarServico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"desc_servico\":\"Fotografo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cadastrarServico",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastrarServico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarServico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/listarServico",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarServico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarServicoPK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/listarServicoPK/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarServicoPK",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AlterarServico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_servico\":1,\r\n    \"desc_servico\":\"Pintor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/alterarServico",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alterarServico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExcluirServico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/excluirServico/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"excluirServico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USUARIO",
+			"item": [
+				{
+					"name": "CadastrarUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"nome\":\"Samuel\",\r\n    \"uf\":\"SP\",\r\n    \"telefone\":\"41416913\",\r\n    \"email\":\"exemplo.com\",\r\n    \"senha\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cadastrarUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastrarUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/listarUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUsuarioPK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/listarUsuarioPK/samuel",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarUsuarioPK",
+								"samuel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUsuarioEMAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/listarUsuarioNOME/exemplo.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarUsuarioNOME",
+								"exemplo.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AlterarUsuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"nome\":\"Samuel\",\r\n    \"uf\":\"alterado\",\r\n    \"telefone\":\"123654\",\r\n    \"email\":\"alterado\",\r\n    \"senha\":\"6543\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/alterarUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alterarUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExcluirUsuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/excluirUsuario/Samuel",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"excluirUsuario",
+								"Samuel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
